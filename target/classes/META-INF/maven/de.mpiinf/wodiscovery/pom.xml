@@ -13,6 +13,23 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <repositories>
+    <repository>
+        <id>realKD-releases</id>
+        <url>https://bitbucket.org/realKD/releases/raw/master/releases</url>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>fail</checksumPolicy>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+        </snapshots>
+    </repository>
+</repositories>
+
 
   
   
@@ -44,14 +61,11 @@
   </build>
 
 
-
-
-
 	<dependencies>
 		<dependency>
 			<groupId>org.realkd</groupId>
 			<artifactId>realkd</artifactId>
-			<version>0.7.1-SNAPSHOT</version>
+			<version>0.7.1</version>
 		</dependency>
 	</dependencies>
 </project>
